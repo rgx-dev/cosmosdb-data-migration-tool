@@ -1,0 +1,9 @@
+﻿services:
+  cosmosdbdeploymentmigrationtool.cli:
+    image: cosmosdbdeploymentmigrationtool.cli
+    
+    build:
+      context: .
+      dockerfile: CosmosDbDeploymentMigrationTool.Cli/Dockerfile
+      
+    env_file: './compose.env'
